@@ -41,13 +41,13 @@
 
      //Metodo toString
      datoCompleto(){
-         return `${this._nombre} 
-                 ${this._apellido} 
-                 ${this._edad}`;
+         return `${this.nombre} 
+                 ${this.apellido} 
+                 ${this.edad}`;
      }
      toString(){
          return `${this.datoCompleto} 
-                 ${this._idPersona}
+                 ${this.idPersona}
                  Cat. Persona`;
      }
  }

@@ -2,7 +2,7 @@
  * *PRUEBA PERSONAS
  */
 class Persona{
-    //Declaración de variables de clase
+    //Declaración de variables de clase -variable propia de esta clase-, la declaramos con el método static que la asocia exclusivamente con esta clase y no otra clase o otro objeto.
     static contadorPersona = 0;
     
     //Declaración del constructor

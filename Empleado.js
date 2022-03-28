@@ -23,9 +23,9 @@ class Empleado extends Persona{
 
     //Sobreescritura de toString
     datoCompleto(){
-        return `${this._idEmpleado} 
+        return `${this.idEmpleado} 
                 ${super.datoCompleto()}, 
-                ${this._sueldo} 
+                ${this.sueldo} 
                 Cat. Empleado`;
     }
 }

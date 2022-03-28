@@ -1,8 +1,8 @@
 class Cliente extends Persona{
-    //Declaracion de variables
+    //Declaracion de variables de clase
     static contadorCliente = 0;
+    //Declaración de un objeto de clase
     fechaReg = new Date();
-
     //Superposicion de variables
     constructor(fechaReg ){
         super(nombre, apellido, edad);
@@ -20,14 +20,14 @@ class Cliente extends Persona{
 
     //Setters
     set fechaReg(fechaReg){
-        return this._fechaReg = fechaReg;
+        this._fechaReg = fechaReg;
     }
 
     //Reescritura toString
     datoCompleto(){
-        return `${this._idCliente} 
+        return `${this.idCliente} 
                 ${super.datoCompleto}, 
-                ${this._fechaReg} 
+                ${this.fechaReg} 
                 Cat. Cliente`;
     }
 
