@@ -40,11 +40,11 @@ class Persona{
 
     //Metodo toString
     datoCompleto(){
-            return `${this._nombre} ${this._apellido} ${this._edad}`;
+            return `${this.nombre} ${this.apellido} ${this.edad}`;
     }
 
     toString(){
-        return `idP:${this._idPersona} ${this.datoCompleto()} From Cat. Persona`;
+        return `idP:${this.idPersona} ${this.datoCompleto()} From Cat. Persona`;
     }
 }
 
@@ -74,9 +74,9 @@ class Cliente extends Persona{
 
     //Reescritura toString
     datoCompleto(){
-        return `idC:${this._idCliente} 
+        return `idC:${this.idCliente} 
                 ${super.datoCompleto()} , 
-                fecha: ${this._fechaReg} 
+                fecha: ${this.fechaReg} 
                 Cat. Cliente`;
     }
 }
@@ -106,9 +106,9 @@ class Empleado extends Persona{
 
     //Sobreescritura de toString
     datoCompleto(){
-        return `idE: ${this._idEmpleado}
+        return `idE: ${this.idEmpleado}
                 ${super.datoCompleto()}, 
-                $: ${this._sueldo} 
+                $: ${this.sueldo} 
                 Cat. Empleado`;
     }
 }
@@ -125,3 +125,6 @@ console.log(cliente1.toString());
 
 let cliente2 = new Cliente('Pedro','Aznar',32, new Date());
 console.log(cliente1.toString());
+
+let empleado2 = new Empleado('Juan', 'Gomez',38,25000);
+console.log(empleado2.toString());
